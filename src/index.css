@@ -1,0 +1,149 @@
+.home {
+    margin: 0px;
+    width: auto;
+    height: 700px;
+    background-color: #0080FF;
+}
+
+.cultural {
+    margin: 0px;
+    width: auto;
+    height: 1050px;
+    background-color: #0080FF;
+}
+
+.homebody {
+    margin: auto !important;
+    margin-bottom: 500px;
+    width: 500px;
+    height: 450px;
+    background-color: #00FFFF;
+}
+
+.flex-containerr>.university {
+    margin-right: 20px;
+    width: 400px;
+}
+
+.flex-container {
+    display: flex;
+    height: 800px;
+}
+
+.flex-containerr {
+    display: flex;
+    height: 150px;
+}
+
+.flex-container2 {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.flex-container2>.btn {
+    margin-left: 10px;
+    width: 75px;
+    height: 20px;
+}
+
+@page {
+    size: auto;
+    margin: 0mm;
+}
+
+@media print {
+    .options,
+    .optionss,
+    .jojo {
+        visibility: hidden;
+    }
+    .letter {
+        display: block;
+        visibility: visible;
+        position: absolute;
+        text-align: left;
+        width: 500px;
+        height: 500px;
+        font-size: 30;
+        margin: 50px;
+        padding: 50px;
+    }
+}
+
+.letter {
+    text-align: justify;
+    padding: 20px;
+    word-spacing: 5px;
+    font-size: 55;
+}
+
+.haha {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.flex-container>.culturalbody {
+    margin-bottom: 500px;
+    margin-left: 50px;
+    display: inline-block;
+    width: 900px;
+    height: 800px;
+    background-color: #c3d3d3;
+}
+
+.flex-container>.options {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 250px;
+    height: 550px;
+    background-color: #00FFFF;
+}
+
+.flex-container>.optionss {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 250px;
+    height: 750px;
+    background-color: #00FFFF;
+}
+
+.homeul {
+    margin-top: 100px;
+    list-style: none;
+    margin: 0 20px;
+    color: #4fa02a;
+    font-size: 30px;
+}
+
+.studentul {
+    margin-top: 100px;
+    list-style: none;
+    margin: 0 20px;
+    color: #4fa02a;
+    font-size: 20px;
+}
+
+.homeliststyle {
+    margin: 10px;
+    padding-right: 350px;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.studentliststyle {
+    margin: 10px;
+    padding-left: 0px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.culturalform {
+    margin: 30px;
+    text-align: left;
+}
