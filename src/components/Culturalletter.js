@@ -1,5 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
+import {Link} from 'react-router-dom'
+
 
 const Culturalletter = (props) => {
 
@@ -69,7 +71,47 @@ const Culturalletter = (props) => {
         <div className="cultural">
             <h1 className="jojo"> This is template for cultural program</h1>
             <div className="flex-container">
+
+                <div className="culturalbody">
+                    <div className="letter">
+                    {month} {date}, {year}<br></br>
+ 
+                    To,<br></br>
+                    {recipient},<br></br>
+                    Shahjalal Univarsity of Science & Technology.<br></br> <br></br>
+  
+                    Subject: Application for permission to celebrate a cultural function 
+                    in the {place}.
+                    <br></br> <br></br>
+  
+                    Sir,<br></br>
+  
+                    I, on behalf of the students of CSE' 17, beg to draw you
+                     kind attention to the fact that we are interested to celebrate a cultural
+                     function in our {place}. This is the last year of 
+                     our university life. Therefore, we want to do something memorable. The students
+                     of our batch will perform many interesting cultural events such as, singing, 
+                     dancing, recitation, acting etc. We will manage the fund collecting 
+                     subscription from each student of our class. Your permission is necessary 
+                     to celebrate our cultural function in the {place}.<br></br>
+                     <br></br>
+  
+                    We, therefore, pray and hope that you would be  kind enough to permit 
+                    us to celebrate the cultural function in the {place} and oblige
+                    thereby.<br></br>
+                    <br></br>
+  
+                    Your most obedient pupil -<br></br>
+                    Pritam Das<br></br>
+                    On behalf of the students of {department}' {batch}<br></br>
+                    Shahjalal Univarsity of Science & Technology<br></br>
+                    </div>
+                </div>
                 <div className="options">
+                <div className="back">
+                    <Link to='/' style={{ textDecoration: 'none' } }>Go back to home</Link>
+                </div>
+                
                 <form className='culturalform' onSubmit={onSubmit}>
                    <label>Date</label> {' '}
                    <input
@@ -148,45 +190,6 @@ const Culturalletter = (props) => {
 
                </form>
                 </div>
-
-                <div className="culturalbody">
-                    <div className="letter">
-                    {month} {date}, {year}<br></br>
- 
-                    To,<br></br>
-                    {recipient},<br></br>
-                    Shahjalal Univarsity of Science & Technology.<br></br> <br></br>
-  
-                    Subject: Application for permission to celebrate a cultural function 
-                    in the {place}.
-                    <br></br> <br></br>
-  
-                    Sir,<br></br>
-  
-                    I, on behalf of the students of CSE' 17, beg to draw you
-                     kind attention to the fact that we are interested to celebrate a cultural
-                     function in our {place}. This is the last year of 
-                     our university life. Therefore, we want to do something memorable. The students
-                     of our batch will perform many interesting cultural events such as, singing, 
-                     dancing, recitation, acting etc. We will manage the fund collecting 
-                     subscription from each student of our class. Your permission is necessary 
-                     to celebrate our cultural function in the {place}.<br></br>
-                     <br></br>
-  
-                    We, therefore, pray and hope that you would be  kind enough to permit 
-                    us to celebrate the cultural function in the {place} and oblige
-                    thereby.<br></br>
-                    <br></br>
-  
-                    Your most obedient pupil -<br></br>
-                    Pritam Das<br></br>
-                    On behalf of the students of {department}' {batch}<br></br>
-                    Shahjalal Univarsity of Science & Technology<br></br>
-                    </div>
-              
-
-                </div>
-
             </div>
         </div>
     )
