@@ -2,6 +2,8 @@ import React from 'react'
 import { useState } from 'react'
 import logo from './logo.png';
 import Coloredline from './Coloredline';
+import {Link} from 'react-router-dom'
+
 
 
 
@@ -22,9 +24,66 @@ const Recommendation = () => {
     return (
         <div>
             <div className="cultural">
-            <h1 className="jojo"> This is template for cultural program</h1>
+            <h1 className="jojo"> This is template for recommendation</h1>
             <div className="flex-container">
+                
+                
+                <div className="culturalbody">
+                    <div className="letter">
+                        <div className="flex-containerr">
+                            <div className="university">
+                                Shahjalal University of Science & Technology<br></br>
+                                Sylhet 3114, Bangladesh.<br></br>
+                                PABX : 880-821-728741,714479,713850,<br></br>
+                                717850,716123,715393.<br></br>
+                                FAX : 880-821-715257,725050<br></br>
+                                Website : www.sust.edu<br></br>
+                                e-mail : registrar@sust.edu<br></br>
+                            </div>
+                            <div className="pic">
+                                 <img src={logo} width="100" height="100" />
+
+                            </div>
+                        </div>
+                        <Coloredline color="black"/>
+                        
+                       {month} {date}, {year}<br></br>
+                       To,<br></br>
+                       {recipient},<br></br>
+                       Shahjalal University of Science & Technology<br></br>
+                       <br></br>
+
+                       Subject: Recommendation letter for an exemplary person.<br></br>
+
+                       <p>It is with great pleasure that I am recommending {studentfstName} {studentlstName}for 
+                       employment with your 
+                        organization.I have been constantly impressed with {studentfstName}'s attitude 
+                        and productivity during the time his/her stay.
+                        </p>
+                        <p>{studentfstName} is both bright and quite motivated.{studentfstName} is a 
+                        quick learner and shown the ability to digest large volumes of 
+                        information.{studentfstName} has demonstrated the ability to articulate 
+                        information and ideas in both the verbal and written forms</p>
+                    
+                        <p>I believe that {studentfstName} will be an excellent fit for the post of {post}
+                        program.{studentfstName} has been nothing short of an exemplary student.If you 
+                        have any further quesitons,feel free to contact
+                        me and I'll be happy to answer any questions you have.</p>
+                        
+                        Sincerely,<br></br>
+                        {writerName},<br></br>
+                        {writerPosition},<br></br>
+                        {writerSchool},<br></br>
+                        {writerEmail},<br></br>
+                        {writerPhone}
+                    </div>
+                </div>
+
                 <div className="optionss">
+                <div className="back">
+                    <Link to='/' style={{ textDecoration: 'none' } }>Go back to home</Link>
+                </div>
+              
                 <form className='culturalform'>
                    <label>Date</label> {' '}
                    <input
@@ -149,61 +208,14 @@ const Recommendation = () => {
 
                     ></input> <br></br> <br></br>
 
-                    <button onClick={window.print}>submit</button>
+                    <button onClick={
+                      window.print
+                   //   window.location.href='/home';
+                      
+                      }>submit</button>
                  
 
                </form>
-                </div>
-
-                <div className="culturalbody">
-                    <div className="letter">
-                        <div className="flex-containerr">
-                            <div className="university">
-                                Shahjalal University of Science & Technology<br></br>
-                                Sylhet 3114, Bangladesh.<br></br>
-                                PABX : 880-821-728741,714479,713850,<br></br>
-                                717850,716123,715393.<br></br>
-                                FAX : 880-821-715257,725050<br></br>
-                                Website : www.sust.edu<br></br>
-                                e-mail : registrar@sust.edu<br></br>
-                            </div>
-                            <div className="pic">
-                                 <img src={logo} width="100" height="100" />
-
-                            </div>
-                        </div>
-                        <Coloredline color="black"/>
-                        
-                       {month} {date}, {year}<br></br>
-                       To,<br></br>
-                       {recipient},<br></br>
-                       Shahjalal University of Science & Technology<br></br>
-                       <br></br>
-
-                       Subject: Recommendation letter for an exemplary person.<br></br>
-
-                       <p>It is with great pleasure that I am recommending {studentfstName} {studentlstName}for 
-                       employment with your 
-                        organization.I have been constantly impressed with {studentfstName}'s attitude 
-                        and productivity during the time his/her stay.
-                        </p>
-                        <p>{studentfstName} is both bright and quite motivated.{studentfstName} is a 
-                        quick learner and shown the ability to digest large volumes of 
-                        information.{studentfstName} has demonstrated the ability to articulate 
-                        information and ideas in both the verbal and written forms</p>
-                    
-                        <p>I believe that {studentfstName} will be an excellent fit for the post of {post}
-                        program.{studentfstName} has been nothing short of an exemplary student.If you 
-                        have any further quesitons,feel free to contact
-                        me and I'll be happy to answer any questions you have.</p>
-                        
-                        Sincerely,<br></br>
-                        {writerName},<br></br>
-                        {writerPosition},<br></br>
-                        {writerSchool},<br></br>
-                        {writerEmail},<br></br>
-                        {writerPhone}
-                    </div>
                 </div>
               
 
