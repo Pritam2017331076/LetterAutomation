@@ -20,6 +20,10 @@
     background-color: #00FFFF;
 }
 
+.back {
+    background-color: white;
+}
+
 .flex-containerr>.university {
     margin-right: 20px;
     width: 400px;
