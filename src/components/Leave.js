@@ -1,5 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
+import {Link} from 'react-router-dom'
+
 
 
 const Leave = () => {
@@ -63,7 +65,7 @@ const Leave = () => {
 
     return (
         <div className="cultural">
-            <h1 className="jojo"> This is template for cultural program</h1>
+            <h1 className="jojo"> This is template for emergency leave</h1>
             <div className="flex-container">
 
                 <div className="culturalbody">
@@ -95,6 +97,10 @@ const Leave = () => {
                     </div>
                 </div>
                 <div className="options">
+                <div className="back">
+                    <Link to='/' style={{ textDecoration: 'none' } }>Go back to home</Link>
+                </div>
+                
                 <form className='culturalform' onSubmit={onSubmit}>
                    <label>Date</label> {' '}
                    <input
