@@ -5,6 +5,12 @@ import Culturalletter from './components/Culturalletter';
 import Culturalform from './components/Culturalform'
 import Teachertemplates from './components/Teachertemplates'
 import Recommendation from './components/Recommendation'
+import Officialtemplates from './components/Officialtemplates'
+import Holiday from './components/Holiday'
+import Fundraising from './components/Fundraising'
+import Leave from './components/Leave'
+import Studyleave from './components/Studyleave'
+import Examdeclaration from './components/Examdeclaration'
 
 import './App.css';
 
@@ -25,7 +31,14 @@ function App() {
         />
 
         <Route
+          path="/official" component={Officialtemplates} 
+        />
+
+        <Route
           path="/cultural" component={Culturalletter} 
+        />
+        <Route
+          path="/holiday" component={Holiday} 
         />
 
         <Route
@@ -34,6 +47,21 @@ function App() {
 
         <Route
           path="/culturalform" component={Culturalform} 
+        />
+        <Route
+          path="/fundraising" component={Fundraising} 
+        />
+
+        <Route
+          path="/leave" component={Leave} 
+        />
+
+        <Route
+          path="/studyleave" component={Studyleave} 
+        />
+
+        <Route
+          path="/examdeclaration" component={Examdeclaration} 
         />
 
     </div>
