@@ -10,9 +10,9 @@ const Studenttemplates = () => {
                 <h1>Welcome to letter automation app</h1>
                 <div className="homebody">
                     <ul className="studentul">
-                        <li className="studentliststyle">Application for emergency leave</li>
+                        <li className="studentliststyle"><Link to='/leave' style={{ textDecoration: 'none' } }>Application for emergency leave</Link></li>
                         <li className="studentliststyle"><Link to='/cultural' style={{ textDecoration: 'none' } }>Application for organizing cultural program</Link></li>
-                        <li className="studentliststyle">Application for fund raising program</li>
+                        <li className="studentliststyle"><Link to='/fundraising' style={{ textDecoration: 'none' } }>Application for fund raising program</Link></li>
                     </ul>
                 </div>
             </div>
