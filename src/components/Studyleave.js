@@ -2,6 +2,8 @@ import React from 'react'
 import { useState } from 'react'
 import logo from './logo.png';
 import Coloredline from './Coloredline';
+import {Link} from 'react-router-dom'
+
 
 
 const Studyleave = () => {
@@ -72,7 +74,7 @@ const Studyleave = () => {
     return (
         <div>
             <div className="cultural">
-            <h1 className="jojo"> This is template for cultural program</h1>
+            <h1 className="jojo"> This is template for study leave</h1>
             <div className="flex-container">
                 
                 
@@ -120,6 +122,10 @@ const Studyleave = () => {
                 </div>
 
                 <div className="optionss">
+                <div className="back">
+                    <Link to='/' style={{ textDecoration: 'none' } }>Go back to home</Link>
+                </div>
+                
                 <form className='culturalform'>
                    <label>Date</label> {' '}
                    <input
